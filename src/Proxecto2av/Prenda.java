@@ -74,12 +74,12 @@ public class Prenda extends Coleccion{
     }
 
     @Override
-    public String buscarRef(String referencia) {
-        String buscarref="";
+    public int buscarRef(String referencia) {
+        int buscarref;
         if(super.referencia.contains(referencia)==true){
-            buscarref=super.referencia.get(super.referencia.indexOf(referencia)).toString();
+            buscarref=(super.referencia.indexOf(referencia));
         }else{
-            buscarref="Esta prenda no existe.";
+            buscarref=-1;
         }
         return buscarref;
     }
@@ -117,5 +117,18 @@ public class Prenda extends Coleccion{
         }
         return buscarPrecio;
     }
+     @Override
+    public void mostrar(int indice){
+        if(indice<0){
+            System.out.println("No existe la prenda.");
+        }else{
+            System.out.println(super.referencia.get(indice)+ ", " + super.tipo.get(indice)+ ", "+super.talla.get(indice)+", "+ Integer.parseInt(super.unidades.get(indice).toString())+ ", " + Float.parseFloat(super.precio.get(indice).toString()));
+        }
+        
+        
+    
+        
+    }
+    
  
 }

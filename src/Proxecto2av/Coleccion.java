@@ -79,8 +79,10 @@ public abstract class Coleccion {
     public abstract void borrarPrecio(float precio);
     //metodos buscar
     public abstract String buscarTipo(String tipo);
-    public abstract String buscarRef(String referencia);
+    public abstract int buscarRef(String referencia);
     public abstract String buscarTalla(String talla);
     public abstract int buscarUnidades(int unidades);
     public abstract float buscarPrecio(float precio);
+    //metodo mostrar
+    public abstract void mostrar(int indice);
 }
