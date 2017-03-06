@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 
 public abstract class Coleccion {
-      ArrayList tipo;//tipo de prenda
+    ArrayList tipo;//tipo de prenda
     ArrayList referencia;//referencia da prenda
     ArrayList talla;
     ArrayList unidades;
