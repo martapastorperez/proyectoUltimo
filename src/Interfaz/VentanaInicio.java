@@ -13,12 +13,12 @@ import javax.swing.ImageIcon;
  *
  * @author Ara
  */
-public class VentanaInicio_1 extends javax.swing.JFrame {
+public class VentanaInicio extends javax.swing.JFrame {
 
     /**
      * Creates new form VentanaInicio
      */
-    public VentanaInicio_1() {
+    public VentanaInicio() {
         initComponents();
  //para cambiar tamaño de unha imaxe:       
 //        ImageIcon imagen=new ImageIcon("src/Imagenes/portada.png");
@@ -107,7 +107,7 @@ public class VentanaInicio_1 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         Menu ventana2 =new Menu();
         ventana2.setVisible(true);
-        VentanaInicio_1.this.dispose();
+        VentanaInicio.this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -127,20 +127,20 @@ public class VentanaInicio_1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaInicio_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaInicio_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaInicio_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaInicio_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VentanaInicio_1().setVisible(true);
+                new VentanaInicio().setVisible(true);
             }
         });
     }
