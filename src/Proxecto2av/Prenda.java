@@ -10,6 +10,7 @@ public class Prenda extends Coleccion{
 
     public Prenda(ArrayList tipo, ArrayList referencia, ArrayList talla, ArrayList unidades, ArrayList precio) {
         super(tipo, referencia, talla, unidades, precio);
+       
     }
 
     @Override
@@ -127,6 +128,9 @@ public class Prenda extends Coleccion{
         
         
     
+        
+    }
+    public static void guardar(){
         
     }
     

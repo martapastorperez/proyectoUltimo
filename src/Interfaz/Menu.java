@@ -60,6 +60,11 @@ Prenda prend=new Prenda();
 
         anhadir.setBackground(java.awt.Color.white);
         anhadir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoAnadir.png"))); // NOI18N
+        anhadir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                anhadirMouseClicked(evt);
+            }
+        });
         anhadir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 anhadirActionPerformed(evt);
@@ -147,15 +152,16 @@ Prenda prend=new Prenda();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
+System.exit(0);    
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void anhadirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_anhadirActionPerformed
-    prend.ponerTipo(this.txTipo.getText());
-    prend.ponerRef(this.txReferencia.getText());
-    prend.ponerTalla(this.txTalla.getText());
-    prend.ponerUnidades(Integer.parseInt(txUnidades.getText()));
-    prend.ponerPrecio(Float.parseFloat(txPrezo.getText()));
+//    prend.ponerTipo(this.txTipo.getText());
+//    prend.ponerRef(this.txReferencia.getText());
+//    prend.ponerTalla(this.txTalla.getText());
+//    prend.ponerUnidades(Integer.parseInt(txUnidades.getText()));
+//    prend.ponerPrecio(Float.parseFloat(txPrezo.getText()));
+    
     
        
        
@@ -182,6 +188,14 @@ Prenda prend=new Prenda();
     private void txReferenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txReferenciaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txReferenciaActionPerformed
+
+    private void anhadirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_anhadirMouseClicked
+     prend.ponerTipo(this.txTipo.getText());
+    prend.ponerRef(this.txReferencia.getText());
+    prend.ponerTalla(this.txTalla.getText());
+    prend.ponerUnidades(Integer.parseInt(txUnidades.getText()));
+    prend.ponerPrecio(Float.parseFloat(txPrezo.getText()));
+    }//GEN-LAST:event_anhadirMouseClicked
 
     /**
      * @param args the command line arguments

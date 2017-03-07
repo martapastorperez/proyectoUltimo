@@ -10,7 +10,7 @@ public abstract class Coleccion {
     ArrayList talla;
     ArrayList unidades;
     ArrayList precio;
-    
+   
     public Coleccion() {
     }
 
