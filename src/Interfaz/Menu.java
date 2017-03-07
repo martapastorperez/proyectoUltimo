@@ -90,20 +90,20 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      /* Añadir ventana3=new Añadir();
-       ventana3.setVisible(true);*/
+       Añadir ventana3=new Añadir();
+       ventana3.setVisible(true);
        
        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       /* Buscar ventana4=new Buscar();
-       ventana4.setVisible(true);*/
+        Buscar ventana4=new Buscar();
+       ventana4.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       /* Borrar ventana5=new Borrar();
-       ventana5.setVisible(true);*/
+        Borrar ventana5=new Borrar();
+       ventana5.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
