@@ -1,2 +1,7 @@
-Referencia: 122 Tipo de prenda:  pantalon Talla: S Unidades disponibles: 4 Precio:  12.78€
-Referencia: 123 Tipo de prenda:  falda Talla: S Unidades disponibles: 4 Precio:  12.78€
+123,pantalon,S,4,12.78
+124,falda,S,4,12.78
+001,camisa,M,50,23.95
+177,pantalon,S,4,12.78
+177,pantalon,S,4,12.78
+177,pantalon,S,4,12.78
+133,vestido,S,4,12.78

@@ -178,7 +178,7 @@ System.exit(0);
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
       prend.borrarRef(this.txReferencia.getText());
-      prend.borrarPrecio(Float.parseFloat(this.txPrezo.getText()));
+      
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void txTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txTipoActionPerformed
