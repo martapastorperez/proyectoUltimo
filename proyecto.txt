@@ -1,7 +1,8 @@
+001,camisa,M,50,23.95
+002,camisa con volantes,M,23,34.95
+003,camisa con cremallera,L,10,15.95
+004,camisa vaquera,XL,10,24.95
 123,pantalon,S,4,12.78
 124,falda,S,4,12.78
-001,camisa,M,50,23.95
-177,pantalon,S,4,12.78
-177,pantalon,S,4,12.78
-177,pantalon,S,4,12.78
 133,vestido,S,4,12.78
+177,pantalon,S,4,12.78

@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 
+//hai que importar liberia
+
+
 public class Prenda extends Coleccion{
      public Prenda() {
     }
@@ -119,24 +122,7 @@ public class Prenda extends Coleccion{
      
     }
     
-//    public void escribirTexto(String nombreFichero){
-//         File fich;
-//         PrintWriter f = null;
-//        try{
-//            fich = new File (nombreFichero);
-//            f= new PrintWriter(fich);
-//            for(int i=0;i<super.tipo.size();i++){
-//              f.println("Referencia: " + super.referencia.get(i)+ " Tipo de prenda:  " +super.tipo.get(i)+ " Talla: " + super.talla.get(i)+ " Unidades disponibles: "+Integer.parseInt(super.unidades.get(i).toString())+ " Precio:  "+Float.parseFloat(super.precio.get(i).toString())+ "€");  
-////          
-//            }
-//           
-//        }catch (FileNotFoundException ex){
-//            System.out.println("Error 4 " + ex.getMessage());  
-//        }
-//        finally{
-//            f.close();
-//        }      
-//}
+
     public void escribirTexto(String nombreFichero){
          File fich;
          PrintWriter f = null;
@@ -155,12 +141,7 @@ public class Prenda extends Coleccion{
             f.close();
         }      
 }
-//    public void leerfich(String nombreFich){
-//        File fich;
-//        fich = new File(nombreFich);
-//        StringTokenizer st1=new StringTokenizer(,"\n");
-//        
-//    }
+
         public void leerLineas() throws FileNotFoundException, IOException{
         String s1;
         String s2;
@@ -173,7 +154,7 @@ public class Prenda extends Coleccion{
         s1 = br.readLine();
         if(s1!=null){
             StringTokenizer st = new StringTokenizer(s1,",");
-            System.out.println ("Linea: " + s1);
+            System.out.println ("En stock: " + s1);
             while (st.hasMoreTokens()){
                 ponerRef(st.nextToken());
                 ponerTipo(st.nextToken());
@@ -185,8 +166,7 @@ public class Prenda extends Coleccion{
         }
         }
         while(s1!=null);
-//        int numTokens = 0;
-//        StringTokenizer st = new StringTokenizer (s1);
+
  
 }
     

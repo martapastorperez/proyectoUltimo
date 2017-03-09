@@ -38,7 +38,7 @@ public class Proxecto2av {
        
          //pren.mostrar(pren.buscarRef("122"));
          pren.mostrar(pren.buscarRef("123"));
-         pren.mostrar(pren.buscarTipo("camisa"));
+         pren.mostrar(pren.buscarTipo("camisa con volantes"));
          //pren.borrarRef("122");
          //pren.escribirTexto("proyecto.txt");
         
