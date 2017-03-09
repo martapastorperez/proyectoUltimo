@@ -9,15 +9,15 @@ public class Proxecto2av {
 
     
     public static void main(String[] args) throws IOException {
-        ArrayList tipo=new ArrayList();
-        
-        ArrayList referencia=new ArrayList();//referencia da prenda
-        ArrayList talla=new ArrayList();
-        ArrayList unidades=new ArrayList();
-        ArrayList precio=new ArrayList();
-
-        Prenda pren=new Prenda(tipo,referencia, talla,unidades, precio);
-        pren.leerLineas();
+//        ArrayList tipo=new ArrayList();
+//        
+//        ArrayList referencia=new ArrayList();//referencia da prenda
+//        ArrayList talla=new ArrayList();
+//        ArrayList unidades=new ArrayList();
+//        ArrayList precio=new ArrayList();
+//
+//        Prenda pren=new Prenda(tipo,referencia, talla,unidades, precio);
+//        pren.leerLineas();
 //        pren.ponerTipo("pantalon");
 //        pren.ponerRef("122");
 //        pren.ponerPrecio(12.78F);
@@ -37,8 +37,8 @@ public class Proxecto2av {
         //pren.escribirTexto("proyecto.txt");
        
          //pren.mostrar(pren.buscarRef("122"));
-         pren.mostrar(pren.buscarRef("123"));
-         pren.mostrar(pren.buscarTipo("camisa con volantes"));
+//         pren.mostrar(pren.buscarRef("123"));
+//         pren.mostrar(pren.buscarTipo("camisa con volantes"));
          //pren.borrarRef("122");
          //pren.escribirTexto("proyecto.txt");
         
