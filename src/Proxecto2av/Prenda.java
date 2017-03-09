@@ -56,8 +56,19 @@ public class Prenda extends Coleccion{
     }
 
     
-    public void borrarRef(String referencia) {
-        super.referencia.remove(referencia);
+    public boolean borrarRef(String referencia) {
+      int indice=buscarRef(referencia);
+      if(indice<0){
+          return false;
+      }else{
+          super.tipo.remove(indice);
+          super.talla.remove(indice);
+          super.unidades.remove(indice);
+          super.precio.remove(indice);
+          super.referencia.remove(indice);
+          return true;
+      }
+    
     }
 
   //metodo para que devolva o indice onde esta a palabra
@@ -119,8 +130,10 @@ public class Prenda extends Coleccion{
         if(indice<0){
             System.out.println("No existe la prenda.");
         }else{
+            
             System.out.println(super.referencia.get(indice)+ ", " + super.tipo.get(indice)+ ", "+super.talla.get(indice)+", "+ Integer.parseInt(super.unidades.get(indice).toString())+ ", " + Float.parseFloat(super.precio.get(indice).toString()));
         }
+        
      
     }
     
@@ -138,6 +151,8 @@ public class Prenda extends Coleccion{
            
         }catch (FileNotFoundException ex){
             System.out.println("Error 4 " + ex.getMessage());  
+        }catch(IndexOutOfBoundsException ex){
+            System.out.println("Error 5: "+ ex.getMessage());
         }
         finally{
             f.close();

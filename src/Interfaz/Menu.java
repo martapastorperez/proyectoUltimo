@@ -21,22 +21,25 @@ ArrayList tipo=new ArrayList();
 ArrayList referencia=new ArrayList();
 ArrayList talla=new ArrayList();
 ArrayList unidades=new ArrayList();
-ArrayList prezo=new ArrayList();
+ArrayList precio=new ArrayList();
 
 
 
 
 
-Prenda prend= new Prenda( tipo, referencia, talla, unidades, prezo);
-    
-   // Prenda prend=new Prenda();
 
-//Coleccion colec=new Coleccion() {};
+Prenda prend= new Prenda( tipo, referencia, talla, unidades, precio);
+
     /**
      * Creates new form Ventana2
      */
     public Menu() {
         initComponents();
+        try {
+        prend.leerLineas();
+        } catch (IOException ex) {
+        Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
+    }
     }
 
     /**
@@ -197,15 +200,16 @@ Prenda prend= new Prenda( tipo, referencia, talla, unidades, prezo);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-System.exit(0);    
+        prend.escribirTexto("proyecto.txt");
+        System.exit(0);    
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void anhadirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_anhadirActionPerformed
-    prend.ponerTipo(this.txTipo.getText());
-    prend.ponerRef(this.txReferencia.getText());
-    prend.ponerTalla(this.txTalla.getText());
-    prend.ponerUnidades(Integer.parseInt(txUnidades.getText()));
-    prend.ponerPrecio(Float.parseFloat(txPrezo.getText()));
+    prend.ponerTipo(this.txTipo.getText().toLowerCase());
+    prend.ponerRef(this.txReferencia.getText().toLowerCase());
+    prend.ponerTalla(this.txTalla.getText().toLowerCase());
+    prend.ponerUnidades(Integer.parseInt(txUnidades.getText().toLowerCase()));
+    prend.ponerPrecio(Float.parseFloat(txPrezo.getText().toLowerCase()));
     
     
     
@@ -214,17 +218,23 @@ System.exit(0);
     }//GEN-LAST:event_anhadirActionPerformed
 
     private void BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarActionPerformed
-     txArea.append("Mostrar datos de busqueda: "+"\n Tipo de prenda:"+prend.buscarTipo(this.txTipo.getText())+"\n Referencia: "+prend.buscarRef(this.txReferencia.getText()));
-    try {
-        prend.leerLineas();
-    } catch (IOException ex) {
-        Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-    }
+     int indice=(prend.buscarRef(this.busRef.getText()));
+     if(indice<0){
+            txArea.append("NO EXISTE LA PRENDA.");
+        }else{
+            txArea.append("MOSTRAR DATOS DE BÚSQUEDA: "+"\n Tipo de prenda: "+tipo.get(indice)+"\n Referencia: "+referencia.get(indice)+ "\n Talla: "+talla.get(indice)+"\n Precio: "+ precio.get(indice)+"\n Unidades: "+unidades.get(indice)+"\n");
+            //System.out.println(super.referencia.get(indice)+ ", " + super.tipo.get(indice)+ ", "+super.talla.get(indice)+", "+ Integer.parseInt(super.unidades.get(indice).toString())+ ", " + Float.parseFloat(super.precio.get(indice).toString()));
+        }
+
     }//GEN-LAST:event_BuscarActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-      prend.borrarRef(this.txReferencia.getText());
-      
+      boolean indice=(prend.borrarRef(this.busRef.getText()));
+        if(indice==false){
+           txArea.append("NO EXISTE LA PRENDA.");
+        }else{
+         txArea.append("PRENDA BORRADA.");
+        }      
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void txTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txTipoActionPerformed
@@ -240,15 +250,11 @@ System.exit(0);
     }//GEN-LAST:event_txReferenciaActionPerformed
 
     private void anhadirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_anhadirMouseClicked
-//     prend.ponerTipo(this.txTipo.getText());
-//    prend.ponerRef(this.txReferencia.getText());
-//    prend.ponerTalla(this.txTalla.getText());
-//    prend.ponerUnidades(Integer.parseInt(txUnidades.getText()));
-//    prend.ponerPrecio(Float.parseFloat(txPrezo.getText()));
+
     }//GEN-LAST:event_anhadirMouseClicked
 
     private void busPrendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_busPrendaActionPerformed
-      prend.buscarTipo(this.txTipo.getText());
+      prend.mostrar(prend.buscarTipo(this.txTipo.getText()));
     }//GEN-LAST:event_busPrendaActionPerformed
 
     private void busRefActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_busRefActionPerformed
@@ -256,7 +262,7 @@ System.exit(0);
     }//GEN-LAST:event_busRefActionPerformed
 
     private void guardarFicheroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarFicheroActionPerformed
-       prend.escribirTexto("proyecto.txt");
+      // prend.escribirTexto("proyecto.txt");
     }//GEN-LAST:event_guardarFicheroActionPerformed
 
     /**

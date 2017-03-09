@@ -1,6 +1,5 @@
-400,falda,m,15,12.99
-301,falda,m,15,12.99
-302,camiseta,L,10,7.95
-301,camiseta,L,10,7.95
-302,camiseta,L,10,7.95
-303,camiseta,L,10,7.95
+1235,falda,S,6,12.0
+001,falda de seda,S,23,24.98
+0001,falda de seda,s,12,12.67
+0002,pantalon,l,10,34.99
+0003,chaleco,m,10,34.99

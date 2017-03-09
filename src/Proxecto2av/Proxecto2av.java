@@ -17,7 +17,7 @@ public class Proxecto2av {
 //        ArrayList precio=new ArrayList();
 //
 //        Prenda pren=new Prenda(tipo,referencia, talla,unidades, precio);
-//        pren.leerLineas();
+ //       pren.leerLineas();
 //        pren.ponerTipo("pantalon");
 //        pren.ponerRef("122");
 //        pren.ponerPrecio(12.78F);
