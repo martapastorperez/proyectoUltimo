@@ -146,7 +146,7 @@ public class Prenda extends Coleccion{
             f= new PrintWriter(fich);
             for(int i=0;i<super.tipo.size();i++){
               f.println(super.referencia.get(i)+ "," +super.tipo.get(i)+","+ super.talla.get(i)+ ","+Integer.parseInt(super.unidades.get(i).toString())+ ","+Float.parseFloat(super.precio.get(i).toString()));  
-//          
+          
             }
            
         }catch (FileNotFoundException ex){

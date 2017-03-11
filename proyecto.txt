@@ -1,5 +1,4 @@
 1235,falda,S,6,12.0
-001,falda de seda,S,23,24.98
 0001,falda de seda,s,12,12.67
 0002,pantalon,l,10,34.99
-0003,chaleco,m,10,34.99
+
