@@ -56,20 +56,14 @@ Prenda prend= new Prenda( tipo, referencia, talla, unidades, precio);
         borrar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txArea = new javax.swing.JTextArea();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         txTipo = new javax.swing.JTextField();
         txReferencia = new javax.swing.JTextField();
         txTalla = new javax.swing.JTextField();
         txUnidades = new javax.swing.JTextField();
         txPrezo = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
         busRef = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
         borrarref = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -89,7 +83,7 @@ Prenda prend= new Prenda( tipo, referencia, talla, unidades, precio);
                 anhadirActionPerformed(evt);
             }
         });
-        getContentPane().add(anhadir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 530, 130, 130));
+        getContentPane().add(anhadir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 690, 130, 130));
 
         Buscar.setBackground(java.awt.Color.white);
         Buscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoBuscar.png"))); // NOI18N
@@ -98,7 +92,7 @@ Prenda prend= new Prenda( tipo, referencia, talla, unidades, precio);
                 BuscarActionPerformed(evt);
             }
         });
-        getContentPane().add(Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 240, 130, 130));
+        getContentPane().add(Buscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 350, 130, 130));
 
         borrar.setBackground(java.awt.Color.white);
         borrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/iconoBorrar.png"))); // NOI18N
@@ -107,75 +101,57 @@ Prenda prend= new Prenda( tipo, referencia, talla, unidades, precio);
                 borrarActionPerformed(evt);
             }
         });
-        getContentPane().add(borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 560, 130, 130));
+        getContentPane().add(borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 680, 130, 130));
 
         txArea.setColumns(20);
         txArea.setRows(5);
         jScrollPane1.setViewportView(txArea);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 290, 320));
-
-        jLabel1.setText("Tipo de prenda: ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, -1));
-
-        jLabel2.setText("Referencia: ");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
-
-        jLabel3.setText("Talla: ");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, -1, -1));
-
-        jLabel4.setText("Unidades: ");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, -1, -1));
-
-        jLabel5.setText("Prezo: ");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, -1, -1));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, 290, 320));
 
         txTipo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txTipoActionPerformed(evt);
             }
         });
-        getContentPane().add(txTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 80, -1));
+        getContentPane().add(txTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 120, 30));
 
         txReferencia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txReferenciaActionPerformed(evt);
             }
         });
-        getContentPane().add(txReferencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 90, -1));
-        getContentPane().add(txTalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 90, -1));
-        getContentPane().add(txUnidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 340, 110, -1));
+        getContentPane().add(txReferencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 120, 30));
+        getContentPane().add(txTalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, 120, 30));
+        getContentPane().add(txUnidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, 120, 30));
 
         txPrezo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txPrezoActionPerformed(evt);
             }
         });
-        getContentPane().add(txPrezo, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 120, -1));
-
-        jLabel7.setText("Buscar Ref.:");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 170, -1, -1));
+        getContentPane().add(txPrezo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 610, 120, 30));
 
         busRef.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 busRefActionPerformed(evt);
             }
         });
-        getContentPane().add(busRef, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 170, 90, -1));
-
-        jLabel6.setText("Borrar ref.:");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 490, -1, -1));
+        getContentPane().add(busRef, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 280, 120, 30));
 
         borrarref.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 borrarrefActionPerformed(evt);
             }
         });
-        getContentPane().add(borrarref, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 490, 130, -1));
+        getContentPane().add(borrarref, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 610, 120, 30));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/RESTOVENTANASblanco.png"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jMenu1.setText("Salir");
 
-        jMenuItem1.setText("Salir");
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/SALIR.png"))); // NOI18N
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -303,13 +279,7 @@ Prenda prend= new Prenda( tipo, referencia, talla, unidades, precio);
     private javax.swing.JButton borrar;
     private javax.swing.JTextField borrarref;
     private javax.swing.JTextField busRef;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
