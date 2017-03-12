@@ -1,7 +1,6 @@
 
 package Proxecto2av;
 
-import libreria.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
