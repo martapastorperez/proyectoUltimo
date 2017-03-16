@@ -1,4 +1,7 @@
-1235,falda,S,6,12.0
-0001,falda de seda,s,12,12.67
-0002,pantalon,l,10,34.99
-700,vestido,l,123,34.0
+001,falda,S,6,12.0
+002,falda de seda,s,12,12.67
+003,pantalon,l,10,34.99
+004,vestido,l,123,34.0
+005,medias,xl,14,19.9
+006,blusa,l,14,19.9
+007,blusa vaquera,l,14,19.9

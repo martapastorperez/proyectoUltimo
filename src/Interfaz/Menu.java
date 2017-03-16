@@ -17,11 +17,11 @@ import java.util.logging.Logger;
  * @author Ara
  */
 public class Menu extends javax.swing.JFrame {
-ArrayList tipo=new ArrayList();
+ArrayList <String> tipo=new ArrayList();
 ArrayList <String> referencia=new ArrayList();
-ArrayList talla=new ArrayList();
-ArrayList unidades=new ArrayList();
-ArrayList precio=new ArrayList();
+ArrayList <String>talla=new ArrayList();
+ArrayList <Integer> unidades=new ArrayList();
+ArrayList <Float> precio=new ArrayList();
 
 
 
@@ -198,7 +198,7 @@ Prenda prend= new Prenda( tipo, referencia, talla, unidades, precio);
             txArea.append("NO EXISTE LA PRENDA."+"\n");
         }else{
             txArea.append("MOSTRAR DATOS DE BÚSQUEDA: "+"\n Tipo de prenda: "+tipo.get(indice)+"\n Referencia: "+referencia.get(indice)+ "\n Talla: "+talla.get(indice)+"\n Precio: "+ precio.get(indice)+"\n Unidades: "+unidades.get(indice)+"\n");
-            //System.out.println(super.referencia.get(indice)+ ", " + super.tipo.get(indice)+ ", "+super.talla.get(indice)+", "+ Integer.parseInt(super.unidades.get(indice).toString())+ ", " + Float.parseFloat(super.precio.get(indice).toString()));
+            
         }
 
     }//GEN-LAST:event_BuscarActionPerformed

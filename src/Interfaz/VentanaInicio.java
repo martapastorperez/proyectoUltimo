@@ -21,11 +21,7 @@ public class VentanaInicio extends javax.swing.JFrame {
      */
     public VentanaInicio() {
         initComponents();
- //para cambiar tamaño de unha imaxe:       
-//        ImageIcon imagen=new ImageIcon("src/Imagenes/portada.png");
-//        Icon icono=new ImageIcon(imagen.getImage().getScaledInstance(portada.getWidth(),portada.getHeight(),Image.SCALE_DEFAULT));
-//        portada.setIcon(icono);
-//        this.repaint();
+ 
         
     }
 
@@ -118,8 +114,8 @@ if (jTextField1.getText().equals("AraceliyMarta") && clavedef.equals("AraceliyMa
                 	this.dispose();
 
 
-                	JOptionPane.showMessageDialog(null, "Bienvenido\n"
-                	+ "Has ingresado satisfactoriamente al sistema",   "Mensaje de bienvenida",
+                	JOptionPane.showMessageDialog(null, "Bienvenida\n"
+                	+ "Hola, te has registrado",   "Mensaje de bienvenida",
                 	JOptionPane.INFORMATION_MESSAGE);
 
 
@@ -132,16 +128,12 @@ if (jTextField1.getText().equals("AraceliyMarta") && clavedef.equals("AraceliyMa
 
 
                 	JOptionPane.showMessageDialog(null, "Acceso denegado:\n"
-                	+ "Por favor ingrese un usuario y/o contraseña correctos", "Acceso denegado",
+                	+ "Usuario y/o contraseña incorrectos", "Acceso denegado",
                 	JOptionPane.ERROR_MESSAGE);
       	 
 
         	}
 
-        
-        
-        
-        
         
         Menu ventana2 =new Menu();
         ventana2.setVisible(true);
