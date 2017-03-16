@@ -12,14 +12,14 @@ import java.util.StringTokenizer;
 
 
 
-//hai que importar liberia
+
 
 
 public class Prenda extends Coleccion{
      public Prenda() {
     }
 
-    public Prenda(ArrayList tipo, ArrayList referencia, ArrayList talla, ArrayList unidades, ArrayList precio) {
+    public Prenda(ArrayList <String> tipo, ArrayList <String> referencia, ArrayList <String> talla, ArrayList <Integer> unidades, ArrayList <Float> precio) {
         super(tipo, referencia, talla, unidades, precio);
        
     }
@@ -162,10 +162,10 @@ public class Prenda extends Coleccion{
         String s1;
         String s2;
  
-        // Cargamos el buffer con el contenido del archivo
+        
         BufferedReader br = new BufferedReader (new FileReader ("Proyecto.txt"));
  
-        // Leemos la primera linea
+       
         do{
         s1 = br.readLine();
         if(s1!=null){

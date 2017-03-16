@@ -8,6 +8,7 @@ package Interfaz;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -49,7 +50,6 @@ public class VentanaInicio extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPasswordField1.setText("jPasswordField1");
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField1ActionPerformed(evt);
@@ -105,6 +105,44 @@ public class VentanaInicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       
+        
+        char clave[]=jPasswordField1.getPassword();
+
+String clavedef=new String(clave);
+
+
+if (jTextField1.getText().equals("AraceliyMarta") && clavedef.equals("AraceliyMarta")){
+
+
+                	this.dispose();
+
+
+                	JOptionPane.showMessageDialog(null, "Bienvenido\n"
+                	+ "Has ingresado satisfactoriamente al sistema",   "Mensaje de bienvenida",
+                	JOptionPane.INFORMATION_MESSAGE);
+
+
+               	VentanaInicio us = new VentanaInicio();
+
+               	us.setVisible(true);
+
+
+        	}else {
+
+
+                	JOptionPane.showMessageDialog(null, "Acceso denegado:\n"
+                	+ "Por favor ingrese un usuario y/o contraseña correctos", "Acceso denegado",
+                	JOptionPane.ERROR_MESSAGE);
+      	 
+
+        	}
+
+        
+        
+        
+        
+        
         Menu ventana2 =new Menu();
         ventana2.setVisible(true);
         VentanaInicio.this.dispose();

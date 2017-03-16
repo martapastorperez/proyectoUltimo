@@ -4,12 +4,12 @@ package Proxecto2av;
 import java.util.ArrayList;
 
 
-public class Coleccion {//quitei abstract class e comentei os metodos abstractos
-    ArrayList tipo;//tipo de prenda
-    ArrayList referencia;//referencia da prenda
-    ArrayList talla;
-    ArrayList unidades;
-    ArrayList precio;
+public class Coleccion {
+    ArrayList <String> tipo;
+    ArrayList <String> referencia;
+    ArrayList <String> talla;
+    ArrayList <Integer> unidades;
+    ArrayList <Float> precio;
    
     public Coleccion() {
     }
